@@ -1,12 +1,29 @@
+  
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  min-width: 315px;
+}
+
 img{
     width: 100%;
+    height: 135px;
     max-height: 100%;
     border-radius: 5%;
+}
+
+.flex-container :hover img{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .boxValor{
     display: flex;
 }
+
 .logo{
     background-color: rgb(247, 155, 36);
     margin: 0 auto;
@@ -18,9 +35,8 @@ img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    
-  }
+    justify-content: center;    
+}
 
 section{ 
     background-color: rgb(247, 155, 36);
@@ -52,8 +68,7 @@ section{
       height: 15vh;
       min-height: 100px;
   }
- 
-  
+   
   .boxFinal{
     margin: .7rem;
     border-radius: 7%;
@@ -65,7 +80,7 @@ section{
   }
 #fixed{
     background-color: rgb(179, 107, 13);
-    height: 10%;
+    height: 7.5%;
     width: 30%;  
     min-width: 340px;
     bottom:0;
