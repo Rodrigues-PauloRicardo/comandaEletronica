@@ -5,16 +5,21 @@ var resposta = document.getElementById('res');
 function verificar( nome, quantidade ) {
     document.getElementById('res').style.background = 'white';
      document.getElementById('res').style.background = 'white';
-    res.style.height = '60%';
+     document.getElementById
+     ('res').style.bottom = '18%';
+
+     res.style.height = '60%';
 
     let el = document.getElementById('closed');
+
    
     el.style.cssText = 
-    'color: blue;'+
-    'background-color: yellow;'+
+    'color: black;'+
+    'background-color: rgb(247, 155, 36);'+
     'border: 1px solid black;'+
     'height: 30px;'+
     'padding: 15px;'
+    
    
     saida = " <br> Você Pediu... <br>"; 
 
@@ -36,7 +41,7 @@ function verificar( nome, quantidade ) {
 
        
     // mostra a saída
-    resposta.innerHTML = (saida +  "<br> Seu pedido está em preparação....." );
+    resposta.innerHTML = (saida +  "<br><br> Seu pedido está em preparação....." );
     
 }
 
