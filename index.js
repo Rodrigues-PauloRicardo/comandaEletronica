@@ -1,26 +1,53 @@
-let resposta = document.getElementById('res');
+var resposta = document.getElementById('res');
+
 
 
 function verificar( nome, quantidade ) {
-		
-    saida = " <br> Você Pediu... <br>";
-    
-    
+    document.getElementById('res').style.background = 'white';
+     document.getElementById('res').style.background = 'white';
+    res.style.height = '60%';
+
+    let el = document.getElementById('closed');
+   
+    el.style.cssText = 
+    'color: blue;'+
+    'background-color: yellow;'+
+    'border: 1px solid black;'+
+    'height: 30px;'+
+    'padding: 15px;'
+   
+    saida = " <br> Você Pediu... <br>"; 
+
     // itera baseado na quantidade de elementos
     for ( i = 0; i < quantidade; i++ ) {
-
+           
         // obtém cada elemento pelo id
-        checkBox = document.getElementById( nome + ( i + 1 ) );
-        if (checkBox.value === ""){
-            alert = ("jkhjh")
-        }
+   checkBox = document.getElementById( nome + ( i + 1 ) );
+   //  if (checkBox.value !== ""){
+  //        alert  ("Escolha um ítem")      
+    // reseta()
+ //     }
+        
         // se o checkbox estiver marcado, adiciona mais uma linha na string de saida.
-        if ( checkBox.checked ) {
-            saida +="\n <br>" + checkBox.value;
+        if (checkBox.checked ) {
+            saida +="\n <br>" + checkBox.value ;
         }
-    }    
+      }
+
+       
     // mostra a saída
-    resposta.innerHTML = (saida + "<br> Seu pedido está em preparação.....");
+    resposta.innerHTML = (saida +  "<br> Seu pedido está em preparação....." );
+    
 }
 
-/*hghkjkjk
+function fechar(){
+        document.getElementById("res").style.display = "none";
+        document.getElementById("closed").style.display = "none";
+        window.location.reload();
+
+     
+
+
+}
+
+
