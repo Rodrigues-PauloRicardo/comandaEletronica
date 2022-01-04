@@ -3,12 +3,15 @@ var resposta = document.getElementById('res');
 
 
 function verificar( nome, quantidade ) {
+
+
     document.getElementById('res').style.background = 'white';
      document.getElementById('res').style.background = 'white';
      document.getElementById
      ('res').style.bottom = '18%';
 
      res.style.height = '60%';
+
 
     let el = document.getElementById('closed');
 
@@ -34,9 +37,12 @@ function verificar( nome, quantidade ) {
  //     }
         
         // se o checkbox estiver marcado, adiciona mais uma linha na string de saida.
+        
+
+
         if (checkBox.checked ) {
-            saida +="\n <br>" + checkBox.value ;
-        }
+            saida +="\n <br>" + checkBox.value;
+        }  
       }
 
        
