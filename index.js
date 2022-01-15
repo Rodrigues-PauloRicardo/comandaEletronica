@@ -1,4 +1,5 @@
-var resposta = document.getElementById('res');
+var resposta = document.getElementById('res') ;
+
 
 
 
@@ -37,14 +38,19 @@ function verificar( nome, quantidade ) {
  //     }
         
         // se o checkbox estiver marcado, adiciona mais uma linha na string de saida.
+
+        const batata = {
+          valor: 25.00
+        }
         
 
 
-        if (checkBox.checked ) {
-            saida +="\n <br>" + checkBox.value;
+        if (checkBox.checked && checkBox.value === 'Batata Frita') {    
+            saida +="\n <br>" + checkBox.value + batata.valor;
+         
         }  
       }
-
+     
        
     // mostra a saída
     resposta.innerHTML = (saida +  "<br><br> Seu pedido está em preparação....." );
