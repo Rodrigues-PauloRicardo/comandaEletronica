@@ -1,5 +1,6 @@
 //obter itens marcados
 function obterMarcados() {
+  location.replace("newindex.html");
      var listaMarcados = document.getElementsByTagName("input");
     
     var sum = 0;

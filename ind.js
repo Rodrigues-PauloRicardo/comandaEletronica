@@ -12,6 +12,10 @@ let res = document.getElementById('soma')
 res.innerHTML = 'R$ ' + total.toFixed(2);
 }
 
+function fechar(){
+  location.replace("index.html");
+}
+
 
 
 
