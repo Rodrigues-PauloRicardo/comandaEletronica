@@ -1,4 +1,30 @@
-var resposta = document.getElementById('res') ;
+//obter itens marcados
+function obterMarcados() {
+     var listaMarcados = document.getElementsByTagName("input");
+    
+    var sum = 0;
+    for (loop = 0; loop < listaMarcados.length; loop++) {
+       var item = listaMarcados[loop];
+
+       if (item.type == "checkbox" && item.checked){
+         console.log(item.name);
+         console.log(item.value); 
+         sum += parseInt(item.value);
+       }      
+    }
+    console.log('A soma dos valores é:', sum);
+}
+
+    
+
+
+
+
+
+
+
+/*var resposta = document.getElementById('res') ;
+//<input type="checkbox" name="option1" value="BATATA" >Option 1</input>
 
 function verificar( nome, quantidade ) {  
      document.getElementById('res').style.background = 'white';
@@ -29,9 +55,7 @@ function verificar( nome, quantidade ) {
     //      alert  ("Escolha um ítem")      
     // reseta()
     // }
-
-    
-     
+ 
      
   
            
@@ -48,12 +72,13 @@ function verificar( nome, quantidade ) {
     // mostra a saída
     resposta.innerHTML = (saida +  "<br><br> Seu pedido está em preparação....." );    
 }
-
+*/
 function fechar(){
         document.getElementById("res").style.display = "none";
         document.getElementById("closed").style.display = "none";
         window.location.reload();
-
 }
+
+
 
 
