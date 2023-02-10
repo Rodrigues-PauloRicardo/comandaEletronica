@@ -121,20 +121,6 @@ section{
   font-weight: bold;
   
 }
-
-
-
-#closed{
-  color: transparent;
-  background-color: transparent;
-  border: transparent;
-  margin-bottom: 55%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 a{
   margin-top: -3px;
   display: flex;
@@ -146,8 +132,19 @@ hr{
   margin-top: 4%;
   width: 1500px;
   height: 5px;
-  background-color: rgb(223, 172, 106);
-  
+  background-color: rgb(223, 172, 106);  
 }
+
+#soma{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#confirm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
 
 

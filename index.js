@@ -1,29 +1,29 @@
 //obter itens marcados
 function obterMarcados() {
+
   location.replace("newindex.html");
+
      var listaMarcados = document.getElementsByTagName("input");
-    
+
     var sum = 0;
     for (loop = 0; loop < listaMarcados.length; loop++) {
-       var item = listaMarcados[loop];
 
-       if (item.type == "checkbox" && item.checked){
+       var item = listaMarcados[loop];  
+       if (checkBox.checked === false){
+             alert  ("Escolha um ítem")      
+         reseta()          
+
+       }if (item.type == "checkbox" && item.checked){ 
          console.log(item.name);
-         console.log(item.value); 
-         sum += parseInt(item.value);
+         console.log(item.value);          
+         sum += parseInt(item.value);  
+   
        }      
     }
-    console.log('A soma dos valores é:', sum);
+      console.log('A soma dos valores é:', sum);    
 }
 
-    
-
-
-
-
-
-
-
+ 
 /*var resposta = document.getElementById('res') ;
 //<input type="checkbox" name="option1" value="BATATA" >Option 1</input>
 
@@ -42,10 +42,8 @@ function verificar( nome, quantidade ) {
     'height: 30px;'+
     'padding: 15px;'
     
-   
-    saida = " <br> Você Pediu... <br>";
+       saida = " <br> Você Pediu... <br>";
     
-
     // itera baseado na quantidade de elementos
     for ( i = 0; i < quantidade; i++ ) {
            
@@ -57,13 +55,8 @@ function verificar( nome, quantidade ) {
     // reseta()
     // }
  
-     
-  
-           
         // se o checkbox estiver marcado, adiciona mais uma linha na string de saida.
         if (checkBox.checked) { 
-
-                
 
             saida +="\n <br>" + checkBox.value;                  
                  
