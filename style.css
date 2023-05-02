@@ -46,7 +46,7 @@ img{
 section{ 
     background-color: rgb(247, 155, 36);
     margin: 0 auto;
-    min-height: 150vh;
+    min-height: 120vh;
     width: 30%;  
     min-width: 340px;
     display: flex;
